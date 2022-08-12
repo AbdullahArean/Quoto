@@ -2,5 +2,6 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/modak</item>
+        <item>@font/numans</item>
     </array>
 </resources>

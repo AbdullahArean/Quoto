@@ -11,7 +11,7 @@
         android:id="@+id/quote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/modak"
+        android:fontFamily="@font/numans"
         android:text="Hello World!"
         android:textAlignment="center"
         android:textColor="#CC7D39"
