@@ -521,6 +521,11 @@ public class MainActivity extends AppCompatActivity {
         int min=0, max=460;
         int random= (int) (Math.random() * (max - min + 1) + min);
         String one_quote = lines[random];
+        while(one_quote.length()>1000){
+            random= (int) (Math.random() * (max - min + 1) + min);
+            one_quote = lines[random];
+        }
+
         return one_quote;
 
     }
