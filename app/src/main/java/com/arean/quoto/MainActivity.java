@@ -2,7 +2,6 @@ package com.arean.quoto;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,12 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = findViewById(R.id.quote);
         textView.setText(one_quote());
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplication(),"Next Quote Loading",Toast.LENGTH_SHORT).show();
-                textView.setText(one_quote());
-            }
+        textView.setOnClickListener(view -> {
+            Toast.makeText(getApplication(),"Next Quote Loading",Toast.LENGTH_SHORT).show();
+            textView.setText(one_quote());
         });
     }
     public static String one_quote(){
