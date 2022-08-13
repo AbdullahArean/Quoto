@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplication(),"Next Quote Loading",Toast.LENGTH_SHORT).show();
                 textView.setText(one_quote());
             }
         });
@@ -525,6 +527,7 @@ public class MainActivity extends AppCompatActivity {
             random= (int) (Math.random() * (max - min + 1) + min);
             one_quote = lines[random];
         }
+
 
         return one_quote;
 
